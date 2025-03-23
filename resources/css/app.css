@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -7,5 +8,21 @@
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-hanken-grotesk: 'Hanken Grotesk', 'Times New Roman';
+    --color-black: #060606;
+    --text-2xs: 0.625rem;
+
+    /*    --text-xs: clamp(0.79rem, calc(-0.23vw + 0.84rem), 0.63rem);*/
+    /*    --text-sm: clamp(0.89rem, calc(-0.07vw + 0.9rem), 0.84rem);*/
+    /*    --text-base: clamp(1rem, calc(0.19vw + 0.96rem), 1.13rem);*/
+    /*    --text-lg: clamp(1.13rem, calc(0.55vw + 1.01rem), 1.5rem);*/
+    /*    --text-xl: clamp(1.27rem, calc(1.09vw + 1.05rem), 2rem);*/
+    /*    --text-2xl: clamp(1.42rem, calc(1.84vw + 1.06rem), 2.66rem);*/
+    /*    --text-3xl: clamp(1.6rem, calc(2.89vw + 1.02rem), 3.55rem);*/
+    /*    --text-4xl: clamp(1.8rem, calc(4.34vw + 0.93rem), 4.74rem);*/
 }
+
+/*body {*/
+/*    font-size: var(--text-base);*/
+/*}*/
