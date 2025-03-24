@@ -24,9 +24,7 @@ class JobFactory extends Factory
             'title' => fake()->jobTitle,
             'salary' => $this->generateSalary(),
             'location' => fake()->randomElement($this->fakeLocations),
-            'schedule' => fake()->randomElement([
-                'Full Time', 'Full Time', 'Full Time', 'Part Time'
-            ]),
+            'schedule' => $this->fullOrPartTime(),
             'url' => fake()->url,
             'featured' => false,
         ];
@@ -36,5 +34,10 @@ class JobFactory extends Factory
     {
         $salary = number_format(round(rand(30000, 120000), -3));
         return '$' . $salary . ' USD';
+    }
+
+    private function fullOrPartTime(): string
+    {
+        return rand(0, 9) <= 8 ? 'Full Time' : 'Part Time';
     }
 }
